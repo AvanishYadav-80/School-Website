@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise Academy - Excellence in Education</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo-section">
+                <img src="https://www.bing.com/th/id/OIP.-ECW2Mc72Tyru7gEhehEYwHaHa?w=196&h=211&c=8&rs=1&qlt=90&o=6&dpr=2&pid=3.1&rm=2"
+                    alt="School Logo" class="logo">
+                <div class="school-name">Sunrise Academy</div>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Sunrise Academy</h1>
+            <p>Nurturing young minds for a brighter tomorrow. Excellence in education with modern facilities and
+                traditional values.</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Our School</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Sunrise Academy - Where Dreams Take Flight</h3>
+                    <p>Established in 1995, Sunrise Academy has been a beacon of quality education for over 25 years. We
+                        are committed to providing holistic education that develops not just academic excellence but
+                        also character, creativity, and critical thinking.</p>
+                    <p>Our experienced faculty uses innovative teaching methods to ensure every student reaches their
+                        full potential. We believe in creating an environment where learning is joyful and meaningful.
+                    </p>
+                    <p><strong>Our Mission:</strong> To provide quality education and shape future leaders with strong
+                        moral values.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400&h=300&fit=crop"
+                        alt="School Building" class="school-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title">Photo Gallery</h2>
+            <div class="gallery-slider">
+                <div class="gallery-container" id="galleryContainer">
+                    <!-- Gallery Items -->
+                    <div class="gallery-item" data-index="0">
+                        <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=600&h=450&fit=crop"
+                            alt="Sports">
+                        <div class="image-overlay">
+                            <h3>Sports Activities</h3>
+                            <p>Various sports and physical education programs</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-index="1">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9d1?w=600&h=450&fit=crop"
+                            alt="Events">
+                        <div class="image-overlay">
+                            <h3>School Events</h3>
+                            <p>Annual cultural programs and student performances</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-index="2">
+                        <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=450&fit=crop"
+                            alt="Science Lab">
+                        <div class="image-overlay">
+                            <h3>Science Laboratory</h3>
+                            <p>Advanced science labs for hands-on learning and experiments</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item active" data-index="3">
+                        <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=800&h=600&fit=crop"
+                            alt="Classroom">
+                        <div class="image-overlay">
+                            <h3>Modern Classroom</h3>
+                            <p>State-of-the-art classrooms equipped with smart boards and modern learning tools</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-index="4">
+                        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&h=450&fit=crop"
+                            alt="Library">
+                        <div class="image-overlay">
+                            <h3>Library</h3>
+                            <p>Well-stocked library with thousands of books and digital resources</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-index="5">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=450&fit=crop"
+                            alt="Playground">
+                        <div class="image-overlay">
+                            <h3>School Playground</h3>
+                            <p>Spacious playground for various sports and outdoor activities</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-index="6">
+                        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&h=450&fit=crop"
+                            alt="School Building">
+                        <div class="image-overlay">
+                            <h3>School Building</h3>
+                            <p>Beautiful school campus with modern architecture</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Controls -->
+                <button class="slider-controls prev-btn" id="prevBtn">‹</button>
+                <button class="slider-controls next-btn" id="nextBtn">›</button>
+
+                <!-- Slider Indicators -->
+                <div class="slider-indicators" id="sliderIndicators">
+                    <div class="indicator" data-slide="0"></div>
+                    <div class="indicator" data-slide="1"></div>
+                    <div class="indicator" data-slide="2"></div>
+                    <div class="indicator active" data-slide="3"></div>
+                    <div class="indicator" data-slide="4"></div>
+                    <div class="indicator" data-slide="5"></div>
+                    <div class="indicator" data-slide="6"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="section facilities">
+        <div class="container">
+            <h2 class="section-title">Our Facilities</h2>
+            <div class="facilities-grid">
+                <div class="facility-card">
+                    <div class="facility-icon">📚</div>
+                    <h3>Modern Library</h3>
+                    <p>Well-stocked library with thousands of books and digital resources to enhance learning.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">🔬</div>
+                    <h3>Science Laboratory</h3>
+                    <p>State-of-the-art science labs equipped with modern instruments for practical learning.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">💻</div>
+                    <h3>Computer Lab</h3>
+                    <p>Advanced computer lab with latest software and high-speed internet connectivity.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">🏃</div>
+                    <h3>Sports Complex</h3>
+                    <p>Comprehensive sports facilities including playground, gymnasium, and indoor games.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">🎨</div>
+                    <h3>Arts & Culture</h3>
+                    <p>Dedicated spaces for music, dance, drama, and visual arts to nurture creativity.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">🚌</div>
+                    <h3>Transportation</h3>
+                    <p>Safe and comfortable bus service covering all major areas of the city.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <strong>Address:</strong><br>
+                            123 Education Street, Knowledge City<br>
+                            New Delhi - 110001, India
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <strong>Phone:</strong><br>
+                            +91 98765 43210<br>
+                            011-2345-6789
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <strong>Email:</strong><br>
+                            info@sunriseacademy.edu.in<br>
+                            admission@sunriseacademy.edu.in
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div>
+                            <strong>Office Hours:</strong><br>
+                            Monday - Friday: 8:00 AM - 4:00 PM<br>
+                            Saturday: 8:00 AM - 12:00 PM
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Maps -->
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.674994343309!2d77.23090731508236!3d28.65195908240251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd0683d1e6c3%3A0x8d9c4e5b5b5b5b5b!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1635789012345!5m2!1sen!2sin"
+                    width="100%" height="400" allowfullscreen loading="lazy" title="Google Map — Sunrise Academy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Sunrise Academy. All rights reserved.</p>
+            <p>Excellence in Education | Shaping Future Leaders</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'96b6d85160e9595d',t:'MTc1NDU3MDQ1My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
+</html>
